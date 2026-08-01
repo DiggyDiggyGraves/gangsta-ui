@@ -1,2 +1,2 @@
-# gangsta-ui
+ gangsta-ui
 gangsta ui mini game
