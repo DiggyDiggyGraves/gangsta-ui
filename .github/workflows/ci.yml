@@ -1,4 +1,4 @@
-name: CI with Yarn Berry
+name: CI
 
 on:
   push:
@@ -17,10 +17,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Set up Yarn Berry
-        uses: threeal/setup-yarn-action@v2.0.0
-        with:
-          version: stable
+      - name: Enable Corepack
+        run: corepack enable
 
       - name: Install dependencies
         run: yarn install
